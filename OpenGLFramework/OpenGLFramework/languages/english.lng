@@ -1,0 +1,311 @@
+;
+; main menu
+;
+New game					;0
+Enemy objects browse		;1
+Options						;2
+Highscore					;3
+Multiplayer					;4
+Credits						;5
+Exit						;6
+Reserve						;7
+;
+; MessageBox
+;
+OK							;8
+Cancel						;9
+Yes							;10
+No							;11
+;
+; difficult level
+;
+Select difficult level		;12
+Easy						;13
+Normal						;14
+Hard						;15
+Back						;16
+Reserve						;17
+;
+; ships browse
+;
+Select your ship			;18
+< Previous					;19
+Next >						;20
+Play						;21
+Back						;22
+Description					;23
+Reserve						;24
+;
+Name: %s					;25
+Parameters:					;26
+Shield:						;27
+Armour:						;28
+Armament:					;29
+Manoeuvring:				;30
+Enemy objects browse		;31
+Unavailable					;32
+;
+;
+Credits						;33
+;
+; MessageBox - Exit?
+;
+Exit game?					;34
+;
+;shield indicator
+;
+S							;35
+H							;36
+I							;37
+E							;38
+L							;39
+D							;40
+							;41 space slot
+							;42 space slot
+;
+;armour indicator
+;
+A							;43
+R							;44
+M							;45
+O							;46
+U							;47
+R							;48
+							;49
+							;50 space slot
+;
+; befor/after level
+;
+Level %d									;51
+Ready!										;52
+Game over!									;53
+Press any key								;54
+Enter your name:							;55
+Pause										;56
+Congratulation! You win!					;57
+Name has to contain at least 3 signs!		;58
+Your place: %d								;59
+Upgrade ship								;60
+Indestructibility: %d						;61
+Slowdown enemy: %d							;62
+Multikill x%d!								;63
+;
+;options
+;
+Graphics									;64
+Sound and music								;65
+Language: %s								;66
+Control										;67
+Rezerwa										;68
+Rezerwa										;69
+Rezerwa										;70 <-----------
+;
+Graphics options							;71 + 4
+Resolution: %dx%d							;72
+Color depth: %d								;73
+Antialiasing: x%d							;74
+Antialiasing: Disable						;75
+VSync: %s									;76
+Fullscreen: %s								;77
+Brightness: %d%%							;78
+Shadows: %s									;79
+The window of game will be restarted.		;80
+;
+;sound options
+;
+Sound options								;81
+Sound: %s									;82
+Music: %s									;83
+Volume of sound: %d%%						;84
+-											;85
++											;86
+Volume of music: %d%%						;87
+Reserve										;88
+;
+; HELP
+;
+Bonuses:									;89
+- Upgrade weapon Laser						;90
+- Upgrade weapon Chaingun					;91
+- Upgrade weapon Impulse laser				;92
+- Upgrade weapon Emitter rockets			;93
+- Upgrade weapon Homing rockets				;94
+- Extra life								;95
+- Shield + 50%								;96
+- Upgrade viewfinder						;97
+- Indestructibility + 5 sec.				;98
+- Slowdown enemy + 5 sec.					;99
+- Extra remote rocket						;100
+Reserve										;101
+Reserve										;102
+Reserve										;103
+Reserve										;104
+Reserve										;105
+;
+Control:									;106
+Mouse move - move ship						;107
+Mouse leftbutton's / [Space] - shot			;108
+Mouse rightbutton's / [Ctrl] - roll			;109
+Mouse wheel / [1]-[5] - select weapon		;110
+[C] - camera								;111
+[K] - select viewfinder color				;112
+[Enter] - launch / detonation remote rocket	;113
+[P] - pause									;114
+[F1] - help (pause)							;115
+[Esc] - exit (pause)						;116
+Reserve										;117
+Reserve										;118
+Reserve										;119
+;
+; for highscore
+;
+Player										;120
+Level										;121
+Score										;122
+Clean up									;123
+Do you want to clean up the highscore? 		;124
+Rezerwa										;125
+Rezerwa										;126
+;
+Continue									;127
+;
+Ammunition: %d								;128
+No ammunition!								;129
+;
+; Multiplayer
+;
+Create the game								;130
+Join to game								;131
+Chat										;132
+Message:									;133 dla chat-a		
+;
+; Multiplayer options
+;
+Multiplayer options										;134
+Collisions between players: %s							;135
+The play the same ships: %s								;136
+Reserve													;137
+Reserve													;138
+Reserve													;139
+Reserve													;140
+Join													;141 zatwierdzenie dolaczenia w liscie utworoznych gier
+Next													;142
+Expectation on join second player...					;143
+Expectation on accept second player...					;144
+;
+; Informacje o zalozonej grze
+;
+Player: %s, Host: %s, IP: %s										;145
+Collision: %s, The same ships: %s, Ship: %s							;146
+Empty slot															;147
+Player joined: %s, Host: %s, IP: %s. Do you accept connection? 		;148
+%s rejected your try of connection.									;149
+;
+; loading resources
+;
+Click to continue...							;150
+Loading: prepare								;151
+Loading: textures								;152
+Loading: 3D models								;153
+Loading: sounds & music							;154
+Done											;155
+Reserve											;156
+Reserve											;157
+;
+; Statystyki
+;
+Statistic										;158
+Shoot down objects: %d							;159
+Missed objects: %d								;160
+The best MultiKill: x%d							;161
+Favourite weapon: %s							;162
+Reserve											;163
+Reserve											;164
+Reserve											;165
+;
+; Control options
+;
+Control option									;166
+Use joystick: %s								;167
+Reserve											;168
+Reserve											;169
+Move ship: axis X and Y							;170
+Shot: %s										;171
+Launch / detonation remote rocket: %s			;172
+Change weapon: %s								;173
+Roll: %s										;174
+Camera: %s										;175
+Select viewfinder color: %s						;176
+Pause: %s										;177
+Help / pause: %s								;178
+Exit / pause: %s								;179
+Reserve											;180
+Reserve											;181
+Reserve											;182
+;
+Joy unplugged!									;183
+;
+Button %d										;184
+None											;185
+Press button on joystick. Key [Esc] - cancel.	;186
+Axis Z											;187
+Axis rudder										;188
+;
+; Descriptions of ships
+;
+Needle											;189
+Basic fighter in Union's space armada. Construction is already considered
+obsolete, however this ship is still quite popular especially among
+young pilots of Union. Needle will be withdrawn from active duty as a
+fighter and will be used for training or reconnaissance. Still, this ship
+is used by almost one third of Union's squadrons.
+Reserve ;musi byc w ang aby program nie drukowal
+Reserve
+Reserve
+Reserve
+Reserve
+Reserve
+Reserve
+;
+H.A.L.A.										;154+13
+Fleet engineers have developed a brand new space fighter with excellent
+manoeuvrability. This was achieved thanks to special hull design. H.A.L.A
+is a perfect choice for pilots who like to know that even under heavy fire
+they will be able to outmanoeuvre every opponent they encounter. But this
+great agility has it's cost. This ship has very weak armor and medium
+firepower.
+Reserve
+Reserve
+Reserve
+Reserve
+Reserve
+Reserve
+;
+Unnamed											;154+26
+Unnamed was created to be fast and deadly assault fighter. This ship is
+well armed and is quite popular among pilots who prefer impressive
+firepower rather than good agility. Heavy weaponly however is the cause of
+the greatest disadvantage of the Unnamed - low agility and not so good
+strength of the fighter.
+Reserve
+Reserve
+Reserve
+Reserve
+Reserve
+Reserve
+Reserve
+;
+Razor											;154+39
+Razor is the first of the new line of Next-Gen fighters built with all the
+knowledge and advanced technology developed during the intergalactic wars.
+New hull design allows Razor to carry devastating load of weapons, it's armor
+outperforms everything used so far without losing anything from Razor's
+excellent agility. This is elite war fighter - and only the best pilots are
+allowed to use it in the battle.
+Reserve
+Reserve
+Reserve
+Reserve
+Reserve
+Reserve
+;

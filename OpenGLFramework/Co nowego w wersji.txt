@@ -1,0 +1,192 @@
+Co nowego w wersji 0.5.1:
+- fade w przejściach między poziomami
+- znajdki przezroczyste
+- jedno nowe tło
+- zmniejszenie siły pocisku z lasera o 5 punktów
+- naprawionych bug'ów: 2
+- obsługa joysticka/pada
+
+Co nowego w wersji 0.5.0:
+- naprawa bug'a z przywracaniem poprzednich ustawień głośności muzyki, po jej zmienieniu
+- głośność muzyki do dźwięku: 60/90 %
+- zmiana muzyki w grze co drugi poziom
+- już słychać melodyjkę na "game over" - odgrywa się nie od razu a po pojawieniu się "press any key"
+- zmiana wykorzystywanego urządzenia audio z "DirectSound3D" na domyślne - tak sobie teraz myślę, że to w sumie mogłoby być w opcjach
+
+Co nowego w wersji 0.4.9:
+- statystyki na koniec gry
+- w przeglądarce statków, schematy statków po kliknięciu na ich opis.
+- muzyka i nowe dźwięki
+- w opcjach osobne suwaki dla głośności muzyki i dźwięków
+- tło dla pierwszego poziomu ustalane losowo
+
+Co nowego w wersji 0.4.7:
+- działa na Vista
+- po wczytaniu zasobów "Kliknij aby kontynuować..."
+- na pasku wczytującym zasoby, tłumaczenie napisów wg. ustawionego języka
+- w "Credits" przesuwane napisy z naszymi ksywami
+- w przeglądarce statków, zmiana ikonki na "Kółko za strzałkami" obrazującej możliwość obracania statku
+
+Co nowego w wersji 0.4.5:
+- w trakcie wczytywania zasobów, wyświetlanie informacji co aktualnie jest wczytywane
+- uwzględnienie boss-ów, poruszanie się boss-ów, paski osłony i pancerza dla boss-a, tymczasowi boss w pierwszym poziomie jako Lightstar.
+- poprawki do oświetlenia
+- nowa bron pod [4], co się na razie zowie "Emitter rockets". "Homing rockets" teraz pod [5].
+- po 30 sekundach bezczynności i pobytu w menu głównym, automatycznie włączane intro.
+
+Co nowego w wersji 0.4.3:
+- mała zmiana sposobu rysowania osłony. Teraz osłonę widać z kamery "z kabiny"
+- przywrócenie statycznej kamery dla standardowej
+- gdy używamy broni z ograniczona amunicja i ta wyczerpie się, to automatycznie zostanie przełączona broń na laser (ten bez limitu amunicji)
+- pasek lądowania zasobów, przy wyświetlaniu loga (dzięki temu gra uruchamia się natychmiast, ale wczytuje 3x dłużej :P ale na przyszłość, jak będzie więcej zasobów, możne się przydać)
+- cienie na kartach nVidia rysowane są już prawidłowo
+- kompresja formatu JEH, tekturki schudły o jakieś 5 MB, ale tylko na twardym
+- upgrade samonaprowadzających się rakiet zwiększa także ilość wystrzeliwanych rakiet jednocześnie - max 3
+- amunicja liczona jest jako ilość wystrzałów, a nie jak wcześniej rzeczywista ilość amunicji. Zmieniłem to dlatego aby nie kombinować, gdy mam np. upgrade-a, że wystrzeliwuje mi po trzy homing rockets a amunicji mam sztukę lub dwie.
+- dodatkowa kamera, bardzo oddalona
+- zmiany co do generowania znajdek, dla jego zrównoważenia:
+	1. Ogólnie większy procent szans na pojawienie się znajdek, aktualnie odpowiednio dla poziomów easy/normal/hard: 6%/4%/2% ze starego 3%/2.5%/2%. Oczywiście za każdy zestrzelony statek.
+	2. Wprowadzony limit na ilość znajdek jaka może ukazać się na dany poziom, i tak dla poziomów easy/normal/hard: 6/5/4. Uzasadnienie tej zmiany: już nie będzie się pokazywać 13 znajdek w jednym poziomie a w innym 0. Znaczy się nie powinno być dużych rozbieżności.
+	3. Wprowadzony limit, ze jednoczenie mogą znajdować się na planszy max 2 znajdki. Uzasadnienie tej zmiany: jako ze na easy szansa jest aż 6%, jako że jak ktoś ma super bron i w sekundę skosi wszystkie statki to nie pokaże mu się od razu np. 15 znajdek (czy tam teraz 6 na easy).
+	4. Dodałem jeszcze taki myk, ze jak grasz na easy Needle, to zawsze w pierwszym poziomie dostaniesz znajdkę polepszającą laser - ale korci mnie żeby to wycofać.
+
+//////////////////////////////////////////////////////////////////////////
+
+Co nowego w wersji 0.4.2:
+- menu w trakcie gry. Daje to możliwość zmiany opcji w trakcie gry, bez utraty aktualnego stanu gry.
+- gęściejszy dym dla rakiet
+- oświetlenie dla wybuchów
+- zwiększenie znaczenia celownika i jego upgrade-u, tj. po schwytaniu co najmniej 1 znajdki "celownika", zaznaczany jest obiekt namierzony przez samonaprowadzająca się rakietę oraz zaznaczane są obiekty w zasięgu rażenia zdalnej rakiety (chyli to co już było standardowo, dostaje się dopiero po schwytaniu znajdki). Po schwytaniu co najmniej 4 znajdek "celownika", rysowana jest linia łącząca samonaprowadzające się rakiety a namierzony obiekt. Po schwytaniu co najmniej 5 znajdek "celownika", rysowane są linie pola zasięgu gracza.
+- dla poziomu 5 i 6, lot w testowym tunelu z zablokowana kamera standardowa, po to aby pokazać graczowi, ze są inne kamery i aby zmusić go do pogrania na nich :)
+- zapowiadane rewelacje co do uzbrojenia i znajdek, tj. usunięcie znajdki "uzbrojenie" i dodanie osobnych znajdek dla każdej z broni. Zatem znajdka taka polepsza tylko jedną broń. Na początku gry dostępna jest tylko pierwsza broń. Następne udostępnią się po schwytaniu znajdki. Limity amunicji dla broni niestandardowych, tj. tych powyżej pierwszej. W czasie gry wyświetlana ikonka z wybraną bronią oraz ilością amunicji.
+- poszerzony obszar gry a wraz z tym kamera standardowa nie stoi w miejscu tylko cały czas wodzi za statkiem po osi X.
+- pionowy tekst na wskaźnikach osłony i pancerza zawsze rozłożony równomiernie na całej wysokości wskaźników
+- mechanizm wyświetlania opisów statków w przeglądarce - zrobiony. Brakuje tylko tekstu dla niektórych statków i tłumaczenia na ang
+- przy wybieraniu broni, wybrana ikonka dodatkowo powiększona
+
+//////////////////////////////////////////////////////////////////////////
+
+Co nowego w wersji 0.4.1:
+- efekt cofnięcia się statku gracza, na skutek kolizji z jakimś obiektem
+- przebudowa systemu wykrywania kolizji, wcześniejszy zawodził
+- w highscore wyświetlany także poziom ukończenia gry przez danego gracza
+- możliwość przemiany zestrzelonego statku na dryfujący wrak
+- poprawione rzucanie cieni przez obiekty
+- przebudowa wyświetlania czcionek
+- nowa bron pod [4] - samonaprowadzające się rakiety
+- przymiarki do wstawienia opisów w przeglądarce statków
+
+//////////////////////////////////////////////////////////////////////////
+
+Co nowego w wersji 0.4.0:
+- manager zasobów w OpenAL - wyeliminowanie ograniczeń w ilości wczytywanych dźwięków
+- naprawa znalezionego buga gdzie zmiana jasności, zmieniała kat kamery dla skybox-a
+- przywrócenie osłony 3D - już nie zasłania sprite-ow :)
+- fala uderzeniowa przy detonacji zdalnej rakiety
+- zdalna rakieta może niszczyć także statek gracza, jeżeli zostanie zdetonowana w zasięgu rażenia (takie małe urozmaicenio-urudnienie :))
+
+Znane bugi:
+- Włącz cienie, zmień jakieś inne ustawienia graficzne tak aby zrestartowało się okno, po restarcie okna nie ma cieni w menu. Ale po uruchomieniu rozgrywki cienie powracają - także w menu :/
+
+//////////////////////////////////////////////////////////////////////////
+
+Co nowego w wersji 0.3.9:
+- poprawki do rysowania skybox-a
+- skybox także w menu
+- wyeliminowanie buga z cieniami z v.0.3.8
+
+//////////////////////////////////////////////////////////////////////////
+
+Co nowego w wersji 0.3.8:
+- szansa na pojawienie się znajdki uzależniona od poziomu trudności
+- ilość wrogich statków uzależniona od poziomu trudności
+- opcja graficzna: cienie
+- cienie statków także w menu i przeglądarce
+- tło w grze jako skybox
+- pociski lasera lecą szybciej
+- zmiana sposobu rysowania pocisków chaingun-a
+- nowy dźwięk dla chaingun-a
+- zwiększenie różnicy w gęstości wyziewów z silnika przy poruszaniu statkiem przód-tył
+- odwrócenie kolejności zmiany broni pod kółkiem myszy
+- nowa bron - laser impulsowy - pod klawiszem [3]
+- zmiana broni zobrazowana "ikonkami wyboru"
+- komunikaty dźwiękowe przy zmianie broni
+
+Bugi:
+- w przeglądarce po poruszeniu statkiem widać cień statku na tle. Tylko przy włączonych cieniach w opcjach graficznych.
+
+//////////////////////////////////////////////////////////////////////////
+
+Co nowego w wersji 0.3.7:
+- osłona gracza rysowana tylko wtedy gdy gracz oberwie
+- dodatkowe kamery, zmiana kamer pod klawiszem [C]
+- pod kółkiem myszy zmiana broni
+
+//////////////////////////////////////////////////////////////////////////
+
+Co nowego w wersji 0.3.6:
+- w opcjach graficznych ustawienie jasności
+- szybkość animacji cząsteczek niezależna od ilości fps (pauza pauzuje także cząsteczki),
+- szybkość emitowania nowych cząsteczek dymu dla zniszczeń gracza niezależna od fps,
+- zmniejszenie rozmiaru iskrzenia oraz dymu dla zobrazowania zniszczeń statku gracza,
+- poprawka do lotu zygzakiem wrogich statków (niezależne od fps)
+- dynamiczne cienie dla obiektów 3D.
+- rysowanie osłony jako obiektu 2D. Rysowana osłona zanika wraz z utrata punktów osłony,
+- cztery nowe tła
+- nowa bron dla gracza - karabin maszynowy. Przełączanie się miedzy uzbrojeniem, klawiszami [1] - [2]
+
+//////////////////////////////////////////////////////////////////////////
+
+Co nowego w wersji 0.3.5:
+- poprawa buga z nieprawidłowym pozycjonowaniem tekstu
+
+//////////////////////////////////////////////////////////////////////////
+
+Co nowego w wersji 0.3.4:
+- wyświetlanie aktualnego poziomu w czasie gry
+- zobrazowanie zniszczeń statku gracza poprzez system cząsteczek oraz dym
+- poprawki do frameworka
+
+Naprawione bugi:
+- pozycjonowanie tekstu na środku przycisku (nie wszędzie i nie z każdą rozdzielczością to działało)
+
+//////////////////////////////////////////////////////////////////////////
+
+Co nowego w wersji 0.3.3:
+- nowe dźwięki:
+	- przy uniknięciu trafienia
+	- przy oberwaniu w osłony oraz w pancerz
+	- przy pokazaniu się okna z upgradem statku
+	- przy odpaleniu zdalnej rakiety
+- pomoc pod klawiszem F1 (tylko w czasie gry)
+- nowy statek dla gracza
+- dwa nowe obiekty asteroid
+- szansa na oddanie strzału przez wroga uzależniona także od poziomu trudności
+
+Naprawione bugi:
+- nieusuwanie "znajdek" z poprzedniej gry
+
+Pytanka do testerów :)
+- Czy gra się czasem przycina, tak ogólnie, niezależnie od poziomu (kiedyć mi się czasami przycinała, ale w sumie dawno już tego nie odczuwałem).
+- Czy macie spadek FPS przy poziomach z asteroidami tj. 3 i 7 (ja mam ze ~120 spada do ~65, sprawdzać oczywiście bez VSync)
+- Co sądzicie o odgłosach radochy gdy uda się poprzez beczkę uniknąć pocisku? Może być czy wywalić to w ogóle?
+- Kolejna sprawa to dźwięk przy odpalaniu zdalnej rakiety bo mam dwa i nie wiem, na który się zdecydować :) W katalogu sounds jest remoterocket00.wav i ten dźwięk jest aktualnie używany. Jest tam jeszcze remoterocket07.wav. Który jest lepsiejszy?
+P.S. Coś dla bombkojebutowcomaniaków: addremoterocketsnumber X
+
+//////////////////////////////////////////////////////////////////////////
+
+W wersji 0.3.2
+- zobrazowanie trafienia wroga poprzez system cząsteczek
+- bonus w postaci multikill'a
+- dym w trakcie lotu zdalnej rakiety
+- namierzanie wrogów w trakcie lotu zdalnej rakiety
+- "znajdka" dla broni dodaje kolejny pocisk
+- zmiana koloru celownika poprzez klawisz [K] lub kółka myszy
+- przycisk w higscore do czyszczenia wyników
+- dodanie dźwięków przy schwytaniu "znajdki" i namierzeniu wroga
+Naprawione bugi:
+- rozjeżdżanie się napisów dla menu głównego przy wysuwaniu się menu w intrze, przy rozdzielczości innej niż standardowej
+- blokowanie się na wzajem klawiszy klawiatury
+- przysłanianie się billboard'ów
+- poprawka do przełączania się z fullscren na okno przy jednoczesnym zmienieniu rozdzielczości
+- drobne poprawki

@@ -1,0 +1,32 @@
+Aby móc wpisać kod, należy uruchomić konsole klawiszem [~]. Aby móc uruchomić konsole, należy uruchomić program z parametrem /console, np:
+C:\[twoja scieżka do exe]\SpaceShooter.exe /console
+
+playshipindex X - za X podaj indeks statku z pliku ships.dat. Komenda umożliwia granie każdym obiektem w grze
+
+availableallships - udostępnia wszytskie statki
+
+jumptolevel X - za X podaj numer poziomu, do którego chcesz wskoczyć
+
+setscore X - za X podaj ilość punktów
+
+drawplayerzone - rysuje strefę, po której może poruszać się gracz wraz z zasięgiem ostrzału
+
+addremoterocketsnumber X - za X podaj ilość dodatkowych zdalnych rakiet
+
+addviewfindernumber X - za X podaj ilość dodatkowych "kwadracików" celownika
+
+// Kody polepszenia broni (efek jak za schwytanie znajdźki):
+
+upgrade weapon X - za X podaj numer broni od 1 do 5
+
+/////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////
+
+Parametry programu:
+/console - udostępnienie konsoli pod klawiszem [~]
+/fps - wyświetla ilość kolatek na sekundę
+/logger - tworzy plik log z przebiegu działania programu
+
+Parametry można łączyć w dowolny sposób np:
+"/fps/console" albo "/logger/console/fps" itp.

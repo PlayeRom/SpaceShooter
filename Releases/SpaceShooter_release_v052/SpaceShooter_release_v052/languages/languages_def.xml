@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<languages>
+	<language name="English" file="languages\english.lng">
+		<font file="fonts\FreeSansBold.ttf"/>
+		<font file="fonts\FreeSans.ttf"/>
+		<font file="fonts\FreeMonoBold.ttf"/>
+		<font file="fonts\Abduction.ttf"/>
+	</language>
+	<language name="polski" file="languages\polski.lng">
+		<font file="fonts\FreeSansBold.ttf"/>
+		<font file="fonts\FreeSans.ttf"/>
+		<font file="fonts\FreeMonoBold.ttf"/>
+		<font file="fonts\Abduction.ttf"/>
+	</language>
+</languages>

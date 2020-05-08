@@ -1,0 +1,33 @@
+Algorytm tworzenia statkow
+- Tablica wrogich statkow bedzie tworzona od nowa na kazdy level. Tworzone beda od razu wszytskie statki. Pole bStart na true oznacza ze statek wystartowal - czyli ze gracz moze do niego strzelac. Pole bAlive na true oznacza ze statek zyje, na false oznacza, ze gracz zestrzelil statek.
+- Po zakonczeniu poziomu (tj. zestrzeleniu wszytskich statkow i/lub gdy wszystkie zywe statki przeleca przez plansze) tablica z enemy ship jest usuwana i na nowy poziom tworzona jest nowa.
+
+Ogolne zasady:
+- szybkość i pozycja statków losowa
+- statki startuja na poczatku w ustalonej ilosci, np. 10 sztuk. Jezeli statek zostanie zestrzelony lub przecieci do konca ekranu, to zamiast niego pojaki sie nowy statek.
+- statki startuja w kolejnosci od najmniejszego indeksu tablicy do najwiekszego.
+
+Utrudnienia co level:
+- Zwiekszenie liczny jednoczesnie wystepujacych statkow. Min. 15, max. 35
+- Zwiekszenie liczby statkow na level, poczatkowo 100
+- Zwiekszenie czestotliwosci oddawania strzalow przez wrogie statki. Mnoznik poczatkowy 6 - im mniejszy tym szybciej
+- Zwiekszenie % szans na to, ze statek odda strzal, poczatkowo 40
+- Zwiekszenie szybkosci lotu statku
+
+///////////////////////////////////////////////////////////////////
+
+Lot wrogich statków
+- Każdy statek sam sobie po linii prostej
+- Każdy statek sam sobie po linii prostej, ale na skos
+- Każdy statek sam sobie z góry na dół ale po sinusoidze
+Warianty z dwojkami i trojkami oraz mieszane, niektore statki pojedynczo inne dwojkami, inne trojkami.
+
+Dane dla lotu po cosinusoidze (dodatkowe dane dla SEnemyShip)
+- czy statek bedzie latal po cosinusoidzie - typ GLboolean
+- znak -/+ dla pozycji po osi X (czy bedziemy dodawac czy odejmowac - zmieni to kierunke kolysania sie) - typ GLbooelan
+- aktualny kat wstawiany do funkcji cos - typ GLfloat, wartość domyslna 0.0f
+- wartość o jaką bedzie zwiększany kąt - typ GLfloat - im ta wartość bedzie większa tym statek bedzie ciasniej latal, wartosc domyslna 1.0f
+- kat przechylu statku na skrzydlo
+
+
+sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2))

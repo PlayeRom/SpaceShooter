@@ -1,0 +1,13 @@
+Parametry statku
+- Pkt. oslon - odnawialne
+- Pkt. pancerza - nieodnawialne
+- Zainstalowana bron
+- sila broni - ilosc pkt. niszczacych
+- zwrotnosc - szansa powodzenia unikow
+- szybkosc [?]
+
+Parametry podawane w grze bedą z przedzialu od 0 do 3, program sam obliczy ile to pkt rzeczywistych
+Osłony
+Pancerz
+Uzbrojenie	- czyli sila broni
+Zwrotność
